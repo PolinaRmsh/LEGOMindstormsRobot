@@ -16,5 +16,6 @@ The project was created for the Fundamentals for ICT Students Course at Fontys U
 
 * **Polina Rymshina** - *Initial work* - [I395873](https://git.fhict.nl/I395873)
 * **Thao Pham** - *Initial work* - [I382894](https://git.fhict.nl/I382894)
+* **djamali ** - *Initial work* - [I390109](https://git.fhict.nl/I390109)
  
 More authors coming soon.
