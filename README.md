@@ -15,11 +15,7 @@ The project was created for the Fundamentals for ICT Students Course at Fontys U
 ## Authors
 
 * **Polina Rymshina** - *Initial work* - [I395873](https://git.fhict.nl/I395873)
-<<<<<<< HEAD
 * **Jharna Chhutari** - *New Admin* - [I382412](https://git.fhict.nl/I382412)
-=======
-* **Thao Pham** - *Initial work* - [I382894](https://git.fhict.nl/I382894)
-* **djamali ** - *Initial work* - [I390109](https://git.fhict.nl/I390109)
->>>>>>> e3c820f3fd398f1f606365b4f5b0e076683a5e45
- 
-More authors coming soon.
+* **Thao Pham** - *New Admin* - [I382894](https://git.fhict.nl/I382894)
+* **Djamali Dollison** - *New Admin* - [I390109](https://git.fhict.nl/I390109)
+
