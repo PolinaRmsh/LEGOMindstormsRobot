@@ -10,9 +10,9 @@ We still need to:
 
 Task | Implemented by | Deadline
 -----------------| ------------|----------
-- [] Enable the color sensor in Lego Mindstorms | | 
-- [] Enable the infrared sensor in Lego Mindstorms | | 
-- [] Add buttons for mannual control in C# program | | 
-- [] Make the C# program more personal and good-looking | | 
+- [ ] Enable the color sensor in Lego Mindstorms | | 
+- [ ] Enable the infrared sensor in Lego Mindstorms | | 
+- [ ] Add buttons for mannual control in C# program | | 
+- [ ] Make the C# program more personal and good-looking | | 
 
 The list will be amended with time.
