@@ -147,8 +147,17 @@ namespace Example_Lego_Mindstorms_Bluetooth
             }
         }
 
+
         #endregion
 
-       
+        private void btnForw_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "Forw");
+        }
+
+        private void btnBackw_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "Backw");
+        }
     }
 }
