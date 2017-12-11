@@ -29,9 +29,6 @@ The project was created for the Fundamentals for ICT Students Course at Fontys U
 * **Thao Pham** - *New Admin* - [I382894](https://git.fhict.nl/I382894)
 * **Djamali Dollison** - *New Admin* - [I390109](https://git.fhict.nl/I390109)
 
-## Story
-
-In a university far far away 4 brave fine ladies from the ICT Department have set a goal to build a robot.
 
 
 
