@@ -43,3 +43,14 @@ C:\Users\Polina\Desktop\hamk\Fontys\2nd Block\FIS\Example Lego Mindstorms Blueto
 C:\Users\Polina\Desktop\hamk\Fontys\2nd Block\FIS\Example Lego Mindstorms Bluetooth\obj\Debug\Example Lego Mindstorms Bluetooth.csproj.CoreCompileInputs.cache
 C:\Users\Polina\Desktop\hamk\Fontys\2nd Block\FIS\Example Lego Mindstorms Bluetooth\obj\Debug\Example Lego Mindstorms Bluetooth.exe
 C:\Users\Polina\Desktop\hamk\Fontys\2nd Block\FIS\Example Lego Mindstorms Bluetooth\obj\Debug\Example Lego Mindstorms Bluetooth.pdb
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\bin\Debug\Example Lego Mindstorms Bluetooth.exe.config
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\bin\Debug\Example Lego Mindstorms Bluetooth.exe
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\bin\Debug\Example Lego Mindstorms Bluetooth.pdb
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\bin\Debug\EV3MessengerLib.xml
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\obj\Debug\Example Lego Mindstorms Bluetooth.csprojResolveAssemblyReference.cache
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\obj\Debug\Example_Lego_Mindstorms_Bluetooth.LegoMindstormsForm.resources
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\obj\Debug\Example_Lego_Mindstorms_Bluetooth.Properties.Resources.resources
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\obj\Debug\Example Lego Mindstorms Bluetooth.csproj.GenerateResource.Cache
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\obj\Debug\Example Lego Mindstorms Bluetooth.csproj.CoreCompileInputs.cache
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\obj\Debug\Example Lego Mindstorms Bluetooth.exe
+C:\Users\Jharna Chhutari\FIS2_Robot\Lego Mindstorms App\Example Lego Mindstorms Bluetooth\obj\Debug\Example Lego Mindstorms Bluetooth.pdb
