@@ -1,6 +1,16 @@
 # Lego Robot
 
-Full description of the robot wil be availiable soon.
+The robot consists of two parts: the moving one and the lifting one.
+
+## Moving part
+
+The moving part was assembled by Polina Rymshina and Jharna Chhutari. 
+The robot uses two big motors to move. In the Lego Mindstorms IDE the moving direction can be set by giving different power to the motors.
+
+## Lifting part
+
+The lifting part was assembled by Thao Pham and Djamali Dollison. 
+The robot uses a medium motor to move the lifting arms and close/open the grabbing claw.
 
 ## Background
 
