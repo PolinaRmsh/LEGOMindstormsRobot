@@ -1,0 +1,77 @@
+﻿namespace FIS_RobotThing
+{
+    partial class thirdForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(thirdForm));
+            this.button1 = new System.Windows.Forms.Button();
+            this.infoLB = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PowderBlue;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // infoLB
+            // 
+            this.infoLB.AutoSize = true;
+            this.infoLB.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.infoLB.Location = new System.Drawing.Point(80, 76);
+            this.infoLB.Name = "infoLB";
+            this.infoLB.Size = new System.Drawing.Size(338, 130);
+            this.infoLB.TabIndex = 1;
+            this.infoLB.Text = resources.GetString("infoLB.Text");
+            // 
+            // thirdForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightPink;
+            this.ClientSize = new System.Drawing.Size(490, 321);
+            this.Controls.Add(this.infoLB);
+            this.Controls.Add(this.button1);
+            this.Name = "thirdForm";
+            this.Text = "Robot Information";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label infoLB;
+    }
+}
