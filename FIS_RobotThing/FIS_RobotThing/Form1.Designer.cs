@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(firstForm));
             this.loginLB = new System.Windows.Forms.Label();
             this.passwordLB = new System.Windows.Forms.Label();
             this.loginTB = new System.Windows.Forms.TextBox();
@@ -40,69 +41,76 @@
             // loginLB
             // 
             this.loginLB.AutoSize = true;
-            this.loginLB.Location = new System.Drawing.Point(272, 99);
+            this.loginLB.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.loginLB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.loginLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLB.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.loginLB.Location = new System.Drawing.Point(272, 132);
             this.loginLB.Name = "loginLB";
-            this.loginLB.Size = new System.Drawing.Size(29, 13);
+            this.loginLB.Size = new System.Drawing.Size(35, 15);
             this.loginLB.TabIndex = 0;
-            this.loginLB.Text = "login";
+            this.loginLB.Text = "Login";
             // 
             // passwordLB
             // 
             this.passwordLB.AutoSize = true;
-            this.passwordLB.Location = new System.Drawing.Point(272, 152);
+            this.passwordLB.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.passwordLB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.passwordLB.Location = new System.Drawing.Point(272, 183);
             this.passwordLB.Name = "passwordLB";
-            this.passwordLB.Size = new System.Drawing.Size(52, 13);
+            this.passwordLB.Size = new System.Drawing.Size(55, 15);
             this.passwordLB.TabIndex = 1;
-            this.passwordLB.Text = "password";
+            this.passwordLB.Text = "Password";
             // 
             // loginTB
             // 
-            this.loginTB.BackColor = System.Drawing.Color.LemonChiffon;
+            this.loginTB.BackColor = System.Drawing.Color.FloralWhite;
             this.loginTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.loginTB.Location = new System.Drawing.Point(275, 115);
+            this.loginTB.Location = new System.Drawing.Point(272, 150);
             this.loginTB.Name = "loginTB";
-            this.loginTB.Size = new System.Drawing.Size(100, 20);
+            this.loginTB.Size = new System.Drawing.Size(104, 20);
             this.loginTB.TabIndex = 2;
             this.loginTB.Click += new System.EventHandler(this.loginTB_Click);
             // 
             // passwordTB
             // 
-            this.passwordTB.BackColor = System.Drawing.Color.LemonChiffon;
+            this.passwordTB.BackColor = System.Drawing.Color.FloralWhite;
             this.passwordTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.passwordTB.Location = new System.Drawing.Point(275, 168);
+            this.passwordTB.Location = new System.Drawing.Point(272, 201);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.PasswordChar = '*';
-            this.passwordTB.Size = new System.Drawing.Size(100, 20);
+            this.passwordTB.Size = new System.Drawing.Size(104, 20);
             this.passwordTB.TabIndex = 3;
             this.passwordTB.Click += new System.EventHandler(this.loginTB_Click);
             // 
             // startBT
             // 
-            this.startBT.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.startBT.Location = new System.Drawing.Point(275, 209);
+            this.startBT.BackColor = System.Drawing.Color.IndianRed;
+            this.startBT.Location = new System.Drawing.Point(289, 255);
             this.startBT.Name = "startBT";
-            this.startBT.Size = new System.Drawing.Size(75, 23);
+            this.startBT.Size = new System.Drawing.Size(78, 23);
             this.startBT.TabIndex = 4;
-            this.startBT.Text = "start";
+            this.startBT.Text = "Start";
             this.startBT.UseVisualStyleBackColor = false;
             this.startBT.Click += new System.EventHandler(this.startBT_Click);
             // 
             // wrongLB
             // 
             this.wrongLB.AutoSize = true;
-            this.wrongLB.BackColor = System.Drawing.Color.Azure;
+            this.wrongLB.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.wrongLB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wrongLB.ForeColor = System.Drawing.Color.Red;
-            this.wrongLB.Location = new System.Drawing.Point(240, 73);
+            this.wrongLB.Location = new System.Drawing.Point(240, 107);
             this.wrongLB.Name = "wrongLB";
-            this.wrongLB.Size = new System.Drawing.Size(168, 13);
+            this.wrongLB.Size = new System.Drawing.Size(170, 15);
             this.wrongLB.TabIndex = 5;
             this.wrongLB.Text = "Wrong login or password provided";
             this.wrongLB.Visible = false;
             // 
             // aboutBT
             // 
-            this.aboutBT.BackColor = System.Drawing.Color.LightPink;
-            this.aboutBT.Location = new System.Drawing.Point(12, 12);
+            this.aboutBT.BackColor = System.Drawing.Color.SpringGreen;
+            this.aboutBT.Location = new System.Drawing.Point(12, 44);
             this.aboutBT.Name = "aboutBT";
             this.aboutBT.Size = new System.Drawing.Size(53, 23);
             this.aboutBT.TabIndex = 6;
@@ -115,6 +123,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(642, 359);
             this.Controls.Add(this.aboutBT);
             this.Controls.Add(this.wrongLB);

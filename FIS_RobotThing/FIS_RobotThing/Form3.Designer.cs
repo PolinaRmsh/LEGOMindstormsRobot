@@ -35,8 +35,8 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.PowderBlue;
-            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.Location = new System.Drawing.Point(430, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 23);
             this.button1.TabIndex = 0;
@@ -47,7 +47,7 @@
             // infoLB
             // 
             this.infoLB.AutoSize = true;
-            this.infoLB.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.infoLB.BackColor = System.Drawing.Color.FloralWhite;
             this.infoLB.Location = new System.Drawing.Point(80, 76);
             this.infoLB.Name = "infoLB";
             this.infoLB.Size = new System.Drawing.Size(338, 130);
@@ -59,6 +59,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightPink;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(490, 321);
             this.Controls.Add(this.infoLB);
             this.Controls.Add(this.button1);
