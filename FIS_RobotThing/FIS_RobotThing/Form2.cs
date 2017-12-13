@@ -43,6 +43,7 @@ namespace FIS_RobotThing
 
         private void connectButton_Click(object sender, EventArgs e)
         {
+            
             if (portListBox.SelectedIndex > -1)
             {
                 // Get the selected port from the ListBox
@@ -51,6 +52,7 @@ namespace FIS_RobotThing
                 if (messenger.Connect(port))
                 {
                     updateFormGUI();
+                    connectButton.BackColor = Color.LimeGreen;
                 }
                 else
                 {
@@ -67,7 +69,7 @@ namespace FIS_RobotThing
         private void disconnectButton_Click(object sender, EventArgs e)
         {
             messenger.Disconnect();
-
+            connectButton.BackColor = Color.SpringGreen;
             updateFormGUI();
 
         }

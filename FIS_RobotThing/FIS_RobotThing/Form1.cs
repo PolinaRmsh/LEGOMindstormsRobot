@@ -55,19 +55,41 @@ namespace FIS_RobotThing
         {
             thirdForm.Show();
         }
+
+        private void passwordTB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (loginTB.Text == "admin" && BCrypt.CheckPassword(passwordTB.Text, passwordHash))
+                {
+
+                    this.Hide();
+                    secondForm.Show();
+                    wrongLB.Visible = false;
+                }
+                else
+                {
+                    loginTB.Text = "";
+                    passwordTB.Text = "";
+                    wrongLB.Visible = true;
+                }
+            }
+        }
+
+
         /*private void loginTB_Click(object sender, EventArgs e)
 {
-   if (loginTB.Text == "Wrong")
-   {
-       loginTB.Text = "";
-   }
+if (loginTB.Text == "Wrong")
+{
+loginTB.Text = "";
+}
 }
 private void passwordTB_Click(object sender, EventArgs e)
 {
-   if (passwordTB.Text == "Wrong")
-   {
-       passwordTB.Text = "";
-   }
+if (passwordTB.Text == "Wrong")
+{
+passwordTB.Text = "";
+}
 }*/
 
     }

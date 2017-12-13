@@ -64,6 +64,9 @@
             this.ClientSize = new System.Drawing.Size(490, 321);
             this.Controls.Add(this.infoLB);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "thirdForm";
             this.Text = "Robot Information";
             this.ResumeLayout(false);

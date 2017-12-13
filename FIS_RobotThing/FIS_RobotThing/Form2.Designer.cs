@@ -41,8 +41,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.manualModePanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.inputButton = new System.Windows.Forms.Button();
             this.inputTextBox = new System.Windows.Forms.TextBox();
+            this.inputButton = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -173,6 +173,15 @@
             this.panel2.Size = new System.Drawing.Size(242, 73);
             this.panel2.TabIndex = 5;
             // 
+            // inputTextBox
+            // 
+            this.inputTextBox.BackColor = System.Drawing.Color.FloralWhite;
+            this.inputTextBox.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.inputTextBox.Location = new System.Drawing.Point(14, 13);
+            this.inputTextBox.Name = "inputTextBox";
+            this.inputTextBox.Size = new System.Drawing.Size(215, 20);
+            this.inputTextBox.TabIndex = 5;
+            // 
             // inputButton
             // 
             this.inputButton.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -183,14 +192,6 @@
             this.inputButton.Text = "Send message";
             this.inputButton.UseVisualStyleBackColor = false;
             this.inputButton.Click += new System.EventHandler(this.inputButton_Click);
-            // 
-            // inputTextBox
-            // 
-            this.inputTextBox.BackColor = System.Drawing.Color.FloralWhite;
-            this.inputTextBox.Location = new System.Drawing.Point(14, 13);
-            this.inputTextBox.Name = "inputTextBox";
-            this.inputTextBox.Size = new System.Drawing.Size(215, 20);
-            this.inputTextBox.TabIndex = 5;
             // 
             // secondForm
             // 
@@ -206,6 +207,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.logoutBT);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "secondForm";
             this.Text = "Robot App Controls";
             this.panel3.ResumeLayout(false);

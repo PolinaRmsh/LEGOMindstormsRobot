@@ -82,6 +82,7 @@
             this.passwordTB.Size = new System.Drawing.Size(104, 20);
             this.passwordTB.TabIndex = 3;
             this.passwordTB.Click += new System.EventHandler(this.loginTB_Click);
+            this.passwordTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTB_KeyDown);
             // 
             // startBT
             // 
@@ -133,6 +134,9 @@
             this.Controls.Add(this.loginTB);
             this.Controls.Add(this.passwordLB);
             this.Controls.Add(this.loginLB);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "firstForm";
             this.Text = "Robot App Login Screen";
             this.ResumeLayout(false);
