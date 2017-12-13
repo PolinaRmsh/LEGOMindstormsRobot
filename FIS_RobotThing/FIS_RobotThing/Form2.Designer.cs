@@ -43,8 +43,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.inputTextBox = new System.Windows.Forms.TextBox();
             this.inputButton = new System.Windows.Forms.Button();
+            this.upButton = new System.Windows.Forms.Button();
+            this.rightButton = new System.Windows.Forms.Button();
+            this.leftButton = new System.Windows.Forms.Button();
+            this.downButton = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.manualModePanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -157,8 +162,12 @@
             // manualModePanel
             // 
             this.manualModePanel.BackColor = System.Drawing.Color.FloralWhite;
+            this.manualModePanel.Controls.Add(this.downButton);
+            this.manualModePanel.Controls.Add(this.leftButton);
+            this.manualModePanel.Controls.Add(this.rightButton);
+            this.manualModePanel.Controls.Add(this.upButton);
             this.manualModePanel.Enabled = false;
-            this.manualModePanel.Location = new System.Drawing.Point(12, 220);
+            this.manualModePanel.Location = new System.Drawing.Point(12, 221);
             this.manualModePanel.Name = "manualModePanel";
             this.manualModePanel.Size = new System.Drawing.Size(551, 115);
             this.manualModePanel.TabIndex = 7;
@@ -193,6 +202,50 @@
             this.inputButton.UseVisualStyleBackColor = false;
             this.inputButton.Click += new System.EventHandler(this.inputButton_Click);
             // 
+            // upButton
+            // 
+            this.upButton.BackColor = System.Drawing.Color.Transparent;
+            this.upButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("upButton.BackgroundImage")));
+            this.upButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.upButton.Location = new System.Drawing.Point(48, 3);
+            this.upButton.Name = "upButton";
+            this.upButton.Size = new System.Drawing.Size(40, 40);
+            this.upButton.TabIndex = 0;
+            this.upButton.UseVisualStyleBackColor = false;
+            // 
+            // rightButton
+            // 
+            this.rightButton.BackColor = System.Drawing.Color.Transparent;
+            this.rightButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rightButton.BackgroundImage")));
+            this.rightButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.rightButton.Location = new System.Drawing.Point(92, 37);
+            this.rightButton.Name = "rightButton";
+            this.rightButton.Size = new System.Drawing.Size(40, 40);
+            this.rightButton.TabIndex = 1;
+            this.rightButton.UseVisualStyleBackColor = false;
+            // 
+            // leftButton
+            // 
+            this.leftButton.BackColor = System.Drawing.Color.Transparent;
+            this.leftButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("leftButton.BackgroundImage")));
+            this.leftButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.leftButton.Location = new System.Drawing.Point(3, 37);
+            this.leftButton.Name = "leftButton";
+            this.leftButton.Size = new System.Drawing.Size(40, 40);
+            this.leftButton.TabIndex = 2;
+            this.leftButton.UseVisualStyleBackColor = false;
+            // 
+            // downButton
+            // 
+            this.downButton.BackColor = System.Drawing.Color.Transparent;
+            this.downButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("downButton.BackgroundImage")));
+            this.downButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.downButton.Location = new System.Drawing.Point(48, 72);
+            this.downButton.Name = "downButton";
+            this.downButton.Size = new System.Drawing.Size(40, 40);
+            this.downButton.TabIndex = 3;
+            this.downButton.UseVisualStyleBackColor = false;
+            // 
             // secondForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,7 +253,7 @@
             this.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(575, 348);
+            this.ClientSize = new System.Drawing.Size(575, 350);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.manualModeButton);
             this.Controls.Add(this.manualModePanel);
@@ -214,6 +267,7 @@
             this.Text = "Robot App Controls";
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.manualModePanel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -236,5 +290,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox inputTextBox;
         private System.Windows.Forms.Button inputButton;
+        private System.Windows.Forms.Button downButton;
+        private System.Windows.Forms.Button leftButton;
+        private System.Windows.Forms.Button rightButton;
+        private System.Windows.Forms.Button upButton;
     }
 }
