@@ -22,5 +22,5 @@ Task | Description/Tip | Implemented by | Deadline
 3. Add buttons for manual control in C# program | When button is clicked, it sends a message to robot. Buttons: forward, backwards, turn, stop, etc | Thao Pham | 
 4. Make the C# program more personal and good-looking | Program needs to be changed not to look like the example program | Polina Rymshina | 13.12.2017
 5. Make the command-letter-height not matter | Make the command that user enters automatically go all-caps or all-small-letters, so it wouldnt matter for the command | Polina Rymshina |
-6. Enable the touch sensor | Touch sensor will be like emergency button, stopping all the movements | Polina Rymshina | 
+6. Enable the touch sensor | Touch sensor will be like emergency button, stopping all the movements | | 
 
