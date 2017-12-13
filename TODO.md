@@ -4,7 +4,7 @@
 - [ ] [1](#description-of-the-tasks)
 - [ ] [2](#description-of-the-tasks)
 - [ ] [3](#description-of-the-tasks)
-- [ ] [4](#description-of-the-tasks)
+- [x] [4](#description-of-the-tasks)
 - [ ] [5](#description-of-the-tasks)
 
 Currently we're at the point where:
