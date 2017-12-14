@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EV3MessengerLib">
-      <HintPath>..\Libraries\EV3MessengerLib.dll</HintPath>
+      <HintPath>..\..\..\Documents\FIS\EV3\Week 3\bluetooth dll\C# Bluetooth DLL for Lego Mindstroms\EV3MessengerLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
