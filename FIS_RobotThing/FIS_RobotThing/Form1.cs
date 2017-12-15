@@ -76,22 +76,9 @@ namespace FIS_RobotThing
             }
         }
 
+        private void firstForm_Load(object sender, EventArgs e)
+        {
 
-        /*private void loginTB_Click(object sender, EventArgs e)
-{
-if (loginTB.Text == "Wrong")
-{
-loginTB.Text = "";
-}
-}
-private void passwordTB_Click(object sender, EventArgs e)
-{
-if (passwordTB.Text == "Wrong")
-{
-passwordTB.Text = "";
-}
-}*/
-
+        }
     }
-    
 }
