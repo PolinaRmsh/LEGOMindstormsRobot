@@ -43,7 +43,7 @@ namespace FIS_RobotThing
 
         private void connectButton_Click(object sender, EventArgs e)
         {
-            
+
             if (portListBox.SelectedIndex > -1)
             {
                 // Get the selected port from the ListBox
@@ -161,12 +161,230 @@ namespace FIS_RobotThing
         }
         #endregion
 
-        #region Manual
+        #region Modes
+        //  MANUAL MODE TURNING ON/OFF
         private void manualModeButton_Click(object sender, EventArgs e)
         {
-            manualModePanel.Enabled = true;
+            if (messenger.IsConnected)
+            {
+                if (manualModePanel.Enabled)
+                {
+                    messenger.SendMessage("MESSAGE", "manualout");
+                    manualModePanel.Enabled = false;
+                    manualModePanel.BackColor = Color.WhiteSmoke;
+                }
+                else
+                {
+                    manualModePanel.Enabled = true;
+                    messenger.SendMessage("MESSAGE", "manual");
+                    manualModePanel.BackColor = Color.Lavender;
+                }
+                if (autoModePanel.Enabled)
+                {
+                    autoModePanel.Enabled = false;
+                    autoModePanel.BackColor = Color.WhiteSmoke;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Make sure you are connected to the robot");
+            }
+
         }
 
-        #endregion
+        //  AUTO MODE TURNING ON/OFF
+        private void btnAutoMode_Click(object sender, EventArgs e)
+        {
+            if (messenger.IsConnected)
+            {
+                if (autoModePanel.Enabled)
+                {
+                    autoModePanel.Enabled = false;
+                    autoModePanel.BackColor = Color.WhiteSmoke;
+                }
+                else
+                {
+                    autoModePanel.Enabled = true;
+                    autoModePanel.BackColor = Color.Lavender;
+                    messenger.SendMessage("MESSAGE", "auto");
+                }
+                if (manualModePanel.Enabled)
+                {
+                    messenger.SendMessage("MESSAGE", "manualout");
+                    manualModePanel.Enabled = false;
+                    manualModePanel.BackColor = Color.WhiteSmoke;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Make sure you are connected to the robot");
+            }
+
+        }
+
+        //  BUTTONS IN AUTO MODE
+        bool paused = false;
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "start");
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "stop");
+        }
+
+        private void btnPause_Click(object sender, EventArgs e)
+        {
+            if (paused == true)
+            {
+                messenger.SendMessage("MESSAGE", "busy");
+                paused = false;
+            }
+            else
+            {
+                messenger.SendMessage("MESSAGE", "pause");
+                paused = true;
+            }
+        }
+
+        //  BUTTONS IN MANUAL MODE
+        private void btnForw_Click(object sender, EventArgs e)
+        {
+            if (trackBarSpeed.Value == 0)
+            {
+                messenger.SendMessage("MESSAGE", "forwardslow");
+            }
+            else if (trackBarSpeed.Value == 1)
+            {
+                messenger.SendMessage("MESSAGE", "forwardmedium");
+            }
+            else if (trackBarSpeed.Value == 2)
+            {
+                messenger.SendMessage("MESSAGE", "forwardfast");
+            }
+        }
+
+        private void btnBackw_Click(object sender, EventArgs e)
+        {
+
+            if (trackBarSpeed.Value == 0)
+            {
+                messenger.SendMessage("MESSAGE", "backwardsslow");
+            }
+            else if (trackBarSpeed.Value == 1)
+            {
+                messenger.SendMessage("MESSAGE", "backwardsmedium");
+            }
+            else if (trackBarSpeed.Value == 2)
+            {
+                messenger.SendMessage("MESSAGE", "backwardsfast");
+            }
+        }
+
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "right");
+        }
+
+        private void btnLeft_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "left");
+        }
+
+        private void btStop_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "stop");
+        }
+
+        private void btnPick_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "pick");
+        }
+
+        private void btnDrop_Click(object sender, EventArgs e)
+        {
+            messenger.SendMessage("MESSAGE", "drop");
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // Try to get a message
+            EV3Message message = messenger.ReadMessage();
+            // Check if there is a message received from the Brick
+            if (message != null)
+            {
+                outputListBox.Items.Add("Message: " + message.ValueAsText);
+                // Auto scroll the listbox
+                outputListBox.TopIndex = outputListBox.Items.Count - 1;
+            }
+            else
+            {
+
+            }
+        }
+
+        private void inputTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string txtMsg = inputTextBox.Text;
+                // Make sure a message has been typed
+                if (!String.IsNullOrWhiteSpace(txtMsg))
+                {
+                    // Send a message to the Brick with title: MESSAGE and the message
+                    if (messenger.SendMessage("MESSAGE", txtMsg))
+                    {
+                        inputTextBox.Text = "";
+                        MessageBox.Show("The message has been send to the Brick");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Unable to send the message to the Brick. Please try again.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please type a message for the Brick");
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+            #endregion
+
+            /*private void secondForm_KeyDown(object sender, KeyEventArgs e)
+            {
+                if (!manualModePanel.Enabled)
+                {
+                    return;
+                }
+                switch (e.KeyCode)
+                {
+                    case Keys.A:
+                        messenger.SendMessage("MESSAGE", "left");
+                        break;
+                    case Keys.W:
+                        messenger.SendMessage("MESSAGE", "forward");
+                        break;
+                    case Keys.D:
+                        messenger.SendMessage("MESSAGE", "right");
+                        break;
+                    case Keys.S:
+                        messenger.SendMessage("MESSAGE", "backwards");
+                        break;
+                }
+            }*/
+        }
+
+     
     }
 }

@@ -41,7 +41,7 @@
             // loginLB
             // 
             this.loginLB.AutoSize = true;
-            this.loginLB.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.loginLB.BackColor = System.Drawing.Color.WhiteSmoke;
             this.loginLB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.loginLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginLB.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -54,7 +54,7 @@
             // passwordLB
             // 
             this.passwordLB.AutoSize = true;
-            this.passwordLB.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.passwordLB.BackColor = System.Drawing.Color.WhiteSmoke;
             this.passwordLB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.passwordLB.Location = new System.Drawing.Point(272, 183);
             this.passwordLB.Name = "passwordLB";
@@ -64,7 +64,7 @@
             // 
             // loginTB
             // 
-            this.loginTB.BackColor = System.Drawing.Color.FloralWhite;
+            this.loginTB.BackColor = System.Drawing.Color.White;
             this.loginTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.loginTB.Location = new System.Drawing.Point(272, 150);
             this.loginTB.Name = "loginTB";
@@ -74,7 +74,7 @@
             // 
             // passwordTB
             // 
-            this.passwordTB.BackColor = System.Drawing.Color.FloralWhite;
+            this.passwordTB.BackColor = System.Drawing.Color.White;
             this.passwordTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.passwordTB.Location = new System.Drawing.Point(272, 201);
             this.passwordTB.Name = "passwordTB";
@@ -86,7 +86,8 @@
             // 
             // startBT
             // 
-            this.startBT.BackColor = System.Drawing.Color.IndianRed;
+            this.startBT.BackColor = System.Drawing.Color.LightGreen;
+            this.startBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBT.Location = new System.Drawing.Point(289, 255);
             this.startBT.Name = "startBT";
             this.startBT.Size = new System.Drawing.Size(78, 23);
@@ -98,24 +99,28 @@
             // wrongLB
             // 
             this.wrongLB.AutoSize = true;
-            this.wrongLB.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.wrongLB.BackColor = System.Drawing.Color.MistyRose;
             this.wrongLB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.wrongLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wrongLB.ForeColor = System.Drawing.Color.Red;
-            this.wrongLB.Location = new System.Drawing.Point(240, 107);
+            this.wrongLB.Location = new System.Drawing.Point(224, 105);
             this.wrongLB.Name = "wrongLB";
-            this.wrongLB.Size = new System.Drawing.Size(170, 15);
+            this.wrongLB.Size = new System.Drawing.Size(195, 17);
             this.wrongLB.TabIndex = 5;
             this.wrongLB.Text = "Wrong login or password provided";
             this.wrongLB.Visible = false;
             // 
             // aboutBT
             // 
-            this.aboutBT.BackColor = System.Drawing.Color.SpringGreen;
-            this.aboutBT.Location = new System.Drawing.Point(12, 44);
+            this.aboutBT.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.aboutBT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("aboutBT.BackgroundImage")));
+            this.aboutBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.aboutBT.FlatAppearance.BorderSize = 0;
+            this.aboutBT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.aboutBT.Location = new System.Drawing.Point(12, 32);
             this.aboutBT.Name = "aboutBT";
-            this.aboutBT.Size = new System.Drawing.Size(53, 23);
+            this.aboutBT.Size = new System.Drawing.Size(40, 40);
             this.aboutBT.TabIndex = 6;
-            this.aboutBT.Text = "About";
             this.aboutBT.UseVisualStyleBackColor = false;
             this.aboutBT.Click += new System.EventHandler(this.aboutBT_Click);
             // 
