@@ -1,17 +1,12 @@
 # Tasks
 *(ordered by the time of implementation)*
 
-- [ ] [1](#description-of-the-tasks)
-- [ ] [2](#description-of-the-tasks)
-- [ ] [3](#description-of-the-tasks)
+- [x] [1](#description-of-the-tasks)
+- [x] [2](#description-of-the-tasks)
+- [x] [3](#description-of-the-tasks)
 - [x] [4](#description-of-the-tasks)
 - [x] [5](#description-of-the-tasks)
-- [ ] [6](#description_of_the_tasks)
-
-Currently we're at the point where:
-* Robot is assembled
-* Robot is connected to laptop/C#/Lego Mindstorms
-* We can control the robot by sending messages via C# application
+- [x] [6](#description_of_the_tasks)
 
 ## Description of the tasks
 
