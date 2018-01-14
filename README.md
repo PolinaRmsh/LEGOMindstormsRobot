@@ -1,4 +1,4 @@
-The most up-to-date version of the C# GUI is in the folder FIS2_Robot. For moving the robot (Lego Mindstorms app) use the file move.ev3 . 
+The most up-to-date version of the C# GUI is in the folder FIS2_RobotThing. For moving the robot (Lego Mindstorms app) use the file move.ev3 . 
 
 # Lego Robot
 
