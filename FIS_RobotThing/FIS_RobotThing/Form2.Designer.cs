@@ -90,7 +90,7 @@
             this.panel3.Controls.Add(this.outputListBox);
             this.panel3.Location = new System.Drawing.Point(238, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(216, 181);
+            this.panel3.Size = new System.Drawing.Size(229, 181);
             this.panel3.TabIndex = 6;
             // 
             // label4
@@ -114,9 +114,9 @@
             // 
             this.outputListBox.BackColor = System.Drawing.Color.FloralWhite;
             this.outputListBox.FormattingEnabled = true;
-            this.outputListBox.Location = new System.Drawing.Point(18, 26);
+            this.outputListBox.Location = new System.Drawing.Point(20, 26);
             this.outputListBox.Name = "outputListBox";
-            this.outputListBox.Size = new System.Drawing.Size(179, 147);
+            this.outputListBox.Size = new System.Drawing.Size(189, 147);
             this.outputListBox.TabIndex = 5;
             // 
             // manualModeButton
@@ -129,6 +129,7 @@
             this.manualModeButton.Text = "Go to manual mode!";
             this.manualModeButton.UseVisualStyleBackColor = false;
             this.manualModeButton.Click += new System.EventHandler(this.manualModeButton_Click);
+            this.manualModeButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.secondForm_KeyDown);
             // 
             // refreshButton
             // 
@@ -218,7 +219,7 @@
             this.manualModePanel.Enabled = false;
             this.manualModePanel.Location = new System.Drawing.Point(106, 210);
             this.manualModePanel.Name = "manualModePanel";
-            this.manualModePanel.Size = new System.Drawing.Size(348, 129);
+            this.manualModePanel.Size = new System.Drawing.Size(361, 129);
             this.manualModePanel.TabIndex = 7;
             // 
             // label1
@@ -379,6 +380,7 @@
             // 
             // btnPause
             // 
+            this.btnPause.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnPause.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPause.BackgroundImage")));
             this.btnPause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnPause.FlatAppearance.BorderSize = 0;
@@ -388,7 +390,7 @@
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(40, 40);
             this.btnPause.TabIndex = 2;
-            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.UseVisualStyleBackColor = false;
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // btnStart

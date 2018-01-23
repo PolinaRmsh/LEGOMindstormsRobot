@@ -181,6 +181,7 @@ namespace FIS_RobotThing
                 }
                 if (autoModePanel.Enabled)
                 {
+                    messenger.SendMessage("MESSAGE", "pause");
                     autoModePanel.Enabled = false;
                     autoModePanel.BackColor = Color.WhiteSmoke;
                 }
@@ -223,29 +224,37 @@ namespace FIS_RobotThing
         }
 
         //  BUTTONS IN AUTO MODE
-        bool paused = false;
         private void btnStart_Click(object sender, EventArgs e)
         {
+            btnStart.BackColor = SystemColors.ActiveCaption;
+            if (btnPause.BackColor == Color.DarkSalmon)
+            {
+                btnPause.BackColor = Color.WhiteSmoke;
+            }
             messenger.SendMessage("MESSAGE", "start");
         }
 
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-            messenger.SendMessage("MESSAGE", "stop");
-        }
 
+        //int a = 0;
         private void btnPause_Click(object sender, EventArgs e)
         {
-            if (paused == true)
+
+            btnPause.BackColor = Color.DarkSalmon;
+            if (btnStart.BackColor == SystemColors.ActiveCaption)
             {
-                messenger.SendMessage("MESSAGE", "busy");
-                paused = false;
+                btnStart.BackColor = Color.WhiteSmoke;
             }
-            else
-            {
-                messenger.SendMessage("MESSAGE", "pause");
-                paused = true;
-            }
+            //if (a == 0)
+            //{
+            messenger.SendMessage("MESSAGE", "pause");
+            //a = 1;
+            //}
+            //else if (a == 1)
+            //{
+            //    messenger.SendMessage("MESSAGE", "start");
+            //    a = 0;
+            //}
+
         }
 
         //  BUTTONS IN MANUAL MODE
@@ -262,6 +271,29 @@ namespace FIS_RobotThing
             else if (trackBarSpeed.Value == 2)
             {
                 messenger.SendMessage("MESSAGE", "forwardfast");
+            }
+        }
+
+        private void secondForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!manualModePanel.Enabled)
+            {
+                return;
+            }
+            switch (e.KeyCode)
+            {
+                case Keys.NumPad4:
+                    messenger.SendMessage("MESSAGE", "left");
+                    break;
+                case Keys.NumPad8:
+                    messenger.SendMessage("MESSAGE", "forwardslow");
+                    break;
+                case Keys.NumPad6:
+                    messenger.SendMessage("MESSAGE", "right");
+                    break;
+                case Keys.NumPad2:
+                    messenger.SendMessage("MESSAGE", "backwardsslow");
+                    break;
             }
         }
 
@@ -361,30 +393,9 @@ namespace FIS_RobotThing
 
             #endregion
 
-            /*private void secondForm_KeyDown(object sender, KeyEventArgs e)
-            {
-                if (!manualModePanel.Enabled)
-                {
-                    return;
-                }
-                switch (e.KeyCode)
-                {
-                    case Keys.A:
-                        messenger.SendMessage("MESSAGE", "left");
-                        break;
-                    case Keys.W:
-                        messenger.SendMessage("MESSAGE", "forward");
-                        break;
-                    case Keys.D:
-                        messenger.SendMessage("MESSAGE", "right");
-                        break;
-                    case Keys.S:
-                        messenger.SendMessage("MESSAGE", "backwards");
-                        break;
-                }
-            }*/
+            
         }
 
-     
+
     }
 }
